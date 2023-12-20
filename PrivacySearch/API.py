@@ -1,7 +1,9 @@
-from flask import Flask, request, jsonify, session, redirect, url_for
+from flask import Flask, request, jsonify, session
+from flask_cors import CORS
 from UserDB import UserDB
 from baseSQL import InfoSQL
 app = Flask(__name__)
+CORS(app) # fit to  跨域访问
 
 import os
 # 生成随机密钥
@@ -35,6 +37,11 @@ def logBack(log:str):
         statusText=log
     )
 
+
+# test API
+@app.route('/test', methods=['GET'])
+def test():
+    return jsonify(logBack('test successful'))
 
 # 登录页面
 @app.route('/login', methods=['POST'])
@@ -182,5 +189,6 @@ def update():
   
 
 if __name__ == '__main__': # launch API
-    app.run(host='127.0.0.1', port=5000, debug=True)
+    app.run(host='::', port=8080, debug=True)
 
+# access in your 浏览器: [240e:404:1911:2a6b:c7f1:b65e:ebf8:f722]:8080/test
