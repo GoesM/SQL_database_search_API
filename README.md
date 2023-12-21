@@ -1,5 +1,4 @@
-# -隐私安全课程大作业
-
+# A SQL database and API for web
 ## 提供用户登陆和数据查询的API
 
 
