@@ -191,4 +191,4 @@ def update():
 if __name__ == '__main__': # launch API
     app.run(host='::', port=8080, debug=True)
 
-# access in your 浏览器: [240e:404:1911:2a6b:c7f1:b65e:ebf8:f722]:8080/test
+# access in your 浏览器: [{your ip_v6}]:8080/test

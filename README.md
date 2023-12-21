@@ -9,3 +9,10 @@ python3 API.py
 ## demo尝试
 python3 webworker/{.py}
 进行尝试
+
+## NOTE
+Because API updated, the demo has been out of time.
+Perhaps I would update the demo in the future.
+
+xia ci yi ding ^_^ 
+someone who knows knows. ^_^
